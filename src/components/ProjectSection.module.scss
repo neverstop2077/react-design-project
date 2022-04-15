@@ -1,0 +1,112 @@
+$orange-color: #ba5d2c;
+$text-color: #102a42;
+
+.projectContainer{
+    padding: 40px;
+    background-color: #f1f5f8;
+}
+
+.projectHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 40px 0;
+    color: $text-color;
+    letter-spacing: 3px;
+}
+
+.projectSlash{
+    margin-right: 20px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $orange-color;
+}
+
+.projectContent{
+    visibility: visible;
+}
+
+.projectItem{
+    position: relative;
+    margin: 16px 0;
+}
+
+.projectImg{
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+    min-height: 350px;
+    height: 400px;
+}
+
+.projectInfo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #cb6c37b0;
+    opacity: 0;
+    
+    &:hover{
+        animation: fadeIn .5s ease-out forwards;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.projectContentHeading{
+    color: white;
+    font-size: 1rem;
+    line-height: 0;
+}
+
+.projectDesc{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.projectBtn{
+    cursor: pointer;
+    margin: 40px auto 10px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    color: white;
+    background-color: $orange-color;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.5s ease;
+        background-color: #bd6a3e;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .projectHeading{
+        font-size: 2rem;
+    }
+
+    .projectSlash{
+        font-size: 1.9rem;
+    }
+}

@@ -1,0 +1,63 @@
+$orange-color: #c06737;
+$text-color: #102a42;
+
+.surveypartContainer{
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px;
+    background-color: #f1f5f8;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.surveypartHeading{
+    padding: 12px;
+    background-color: #c06737;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    min-width: 50px;
+}
+
+.surveypartHeadingWord{
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.surveypartInfo{
+    width: 60%;
+}
+
+.infoName{
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.infoVotes{
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.surveypartIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1030px) {
+    .surveypartContainer{
+        margin: 12px 0;
+    }
+    
+    .surveypartInfo{
+        width: auto;
+        flex: 1;
+        margin-left: 60px;
+    }
+}

@@ -1,0 +1,60 @@
+$orange-color: #ba5d2c;
+$text-color: #102a42;
+
+.introWrapper{
+    padding: 40px;
+}
+
+.introHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 40px 0;
+    color: $text-color;
+    letter-spacing: 3px;
+}
+
+.introHeadingSlash{
+    margin-right: 20px;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: $orange-color;
+}
+
+.introContent{
+    margin-bottom: 70px;
+}
+
+.introContentItem{
+    opacity: 0.9;
+}
+
+.introContentIcon{
+    margin-bottom: 16px;
+    font-size: 3rem;
+    color: $orange-color;
+}
+
+.introContentHeading{
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-color;
+}
+
+.introContentDesc{
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: $text-color;
+}
+
+@media (max-width: 800px) {
+    .introHeading{
+        font-size: 2rem;
+    }
+
+    .introHeadingSlash{
+        font-size: 1.9rem;
+    }
+}
+

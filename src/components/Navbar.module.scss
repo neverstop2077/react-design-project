@@ -1,0 +1,96 @@
+$text-color: #fff;
+$navbar-text-color: #0a2540;
+
+.navbarContainer{
+    display: flex;
+}
+
+.navbarLogo{
+    margin-left: 40px;
+}
+
+.navbarLogoWord{
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 11px #333333;
+
+    &:hover{
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.navbarContent{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbarContentSection{
+    position: relative;
+    margin-left: 10%;
+    
+    &:hover > .navbarContentDetailSection{
+        visibility: visible;
+    }
+}
+
+.navbarContentWord{
+    padding-top: 16px;
+    color: $text-color;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.navbarContentDetailSection{
+    visibility: hidden;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: -21px;
+    width: max-content;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 39%;
+        border: solid;
+        border-width: 13px;
+        border-color: transparent transparent #fff transparent;
+    }
+
+    &::before{
+        content: "";
+        width: 125px;
+        height: 30px;
+        background-color: transparent   ;
+        position: absolute;
+        top: -25px;
+        left: 0;
+    }
+}
+
+.navbarContentDetailLogo{
+    display: block;
+}
+
+.navbarContentDetailWord{
+    margin: 10px 0;
+    color: $navbar-text-color;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover{
+        opacity: 0.6;
+    }
+}

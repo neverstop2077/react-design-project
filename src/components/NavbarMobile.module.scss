@@ -1,0 +1,88 @@
+$text-color: #fff;
+$navbar-text-color: #0a2540;
+
+.mobileNavWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MobileNavLogo{
+    display: block;
+}
+
+.MobileNavLogoWord{
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2.4rem;
+    margin-left: 20px;
+    font-weight: 700;
+    text-shadow: 0px 2px 11px #333333;
+
+    &:hover{
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.mobileNavMenuIcon{
+    display: block;
+}
+
+.mobileNavMenuLogo{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.mobileNavMenu{
+    position: relative;
+    width: 500px;
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 5px;
+    
+}
+
+.mobileNavMenuItem{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 12px 0;
+    align-items: center;
+    color: $navbar-text-color;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.mobileNavItemIcon{
+    font-size: 1.9rem;
+    margin-right: 8px;
+}
+
+.mobileNavCloseBtn{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 10px;
+}
+
+.mobileNavOverlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}

@@ -1,0 +1,110 @@
+$orange-color: #ba5d2c;
+$text-color: #102a42;
+
+.projectContainer{
+    padding: 40px;
+    background-color: #f1f5f8;
+}
+
+.projectHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 40px 0;
+    color: $text-color;
+    letter-spacing: 3px;
+}
+
+.projectSlash{
+    margin-right: 20px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $orange-color;
+}
+
+.projectBtn{
+    border: none;
+    margin: 0 12px;
+    text-transform: capitalize;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: $text-color;
+    opacity: 0.4;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 4px 0;
+    position: relative;
+
+    &:hover{
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+}
+
+.activeBtn{
+    opacity: 1;
+}
+
+.projectBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectContainer{
+    visibility: visible;
+}
+
+.projectItem{
+    position: relative;
+    margin: 16px 0;
+}
+
+.projectImg{
+    object-fit: cover;
+    width: 100%;
+    max-height: 250px;
+    min-height: 350px;
+    height: 200px;
+}
+
+.projectInfo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #cb6c37b0;
+    opacity: 0;
+    
+    &:hover{
+        animation: fadeIn .5s ease-out forwards;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.projectContentHeading{
+    color: white;
+    font-size: 0.9rem;
+    line-height: 0;
+}
+
+.projectDesc{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: white;
+}
